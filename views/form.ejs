@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form method="POST" action="/new">
+      <div>
+        <label for="user">Name: </label>
+        <input type="text" name="messageUser" required />
+      </div>
+      <div>
+        <textarea name="messageText" required></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Post" />
+      </div>
+    </form>
+  </body>
+</html>
