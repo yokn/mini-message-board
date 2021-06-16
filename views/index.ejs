@@ -8,6 +8,7 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <div>
+      <a href="new">New message</a>
       <% messages.map((message)=>{ %>
         <div>
           <%= [message.text, message.user, message.added] %>
